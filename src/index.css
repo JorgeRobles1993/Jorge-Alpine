@@ -1,0 +1,235 @@
+@import '~@fortawesome/fontawesome-free/css/all.css';
+
+:root {
+  color: #0251CA;
+}
+
+
+body.modal-open .gallery-container,
+body.modal-open .video-section {
+  filter: blur(8px);
+  transition: filter 0.3s ease-in-out;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #ffffff;
+  /* Fondo blanco */
+  padding: 10px 20px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler-icon {
+  color: #333;
+}
+
+.navbar-nav {
+  margin-left: auto;
+}
+
+.nav-item {
+  margin: 0 10px;
+}
+
+.nav-link {
+  color: #333;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link:focus,
+.nav-link.active {
+  color: #007bff;
+  /* Color al pasar el ratón o al estar activo */
+}
+
+@media (max-width: 992px) {
+  .navbar-nav {
+    margin-top: 10px;
+  }
+
+  .nav-item {
+    margin: 5px 0;
+  }
+}
+
+.navbar-logo {
+  width: 250px;
+  height: auto;
+}
+
+/******************************* Video Landing **********************************/
+
+.video-section {
+  width: 100%;
+  height: 50vh;
+  /* Asegura que la sección del video ocupe la altura total de la ventana */
+  overflow: hidden;
+}
+
+.video-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-container video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* Asegura que el video cubra todo el área manteniendo su proporción */
+}
+
+/******************************* Gallery **********************************/
+
+.gallery-section {
+  padding: 20px;
+}
+
+.card1 {
+  border: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.card-img-top {
+  transition: transform .5s;
+}
+
+.card-img-top:hover {
+  transform: scale(1.1);
+}
+
+.modal-body {
+  padding: 0;
+}
+
+.modal-body img {
+  width: 100%;
+  height: auto;
+}
+
+/******************************* Carrousel Landing **********************************/
+
+.carousel-section {
+  padding: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  border: none;
+}
+
+.card img {
+  width: 50%;
+  /* Ajusta el ancho de la imagen en la tarjeta */
+  height: auto;
+}
+
+.card-body {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card-title {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.card-text ul {
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+/******************************* Before & After **********************************/
+
+.contentWrapper {
+  height: 100%;
+  width: 100%;
+  align-self: center;
+  justify-self: center;
+  align-content: center;
+  justify-content: center;
+}
+
+/******************************* Footer **********************************/
+
+
+.footer {
+  background-color: #212529;
+  color: #fff;
+  padding: 50px 0;
+}
+
+.footer h5 {
+  color: #fff;
+}
+
+.footer p {
+  margin-bottom: 10px;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer ul li {
+  margin-bottom: 10px;
+}
+
+.social-icons li {
+  display: inline;
+  margin-right: 10px;
+}
+
+.social-icons a {
+  color: #fff;
+  font-size: 20px;
+}
+
+.social-icons a:hover {
+  color: #007bff;
+}
+
+.bg-blueAlpine {
+  background-color: #0251CA;
+}
+
+ul {
+  list-style: none;
+}
